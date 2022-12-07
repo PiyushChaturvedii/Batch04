@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Table</title>
+    <style>
+        table{
+            /* border-spacing: 10px 20px; */
+            border-collapse: collapse;
+            width: 300px;
+            table-layout: fixed;
+            empty-cells: show;
+        }
+        table,th,td{
+            border: 2px solid saddlebrown;
+        }
+        td,th{
+            vertical-align: middle;
+            padding: 10px 20px;
+        }
+        caption{
+            caption-side: top;
+        }
+        /* tr{
+            background: rgb(237, 240, 238);
+        } */
+        tr:hover{
+            background: seagreen;
+        }
+        tr:nth-child(even){
+            background: rgb(80, 72, 72);
+        }
+        /* tr:nth-child(){
+            background: rgb(230, 37, 37);
+        } */
+    </style>
+    
+</head>
+<body>
+    <h1>Aeeron : CSS Table Properties</h1>
+    <table>
+        <caption>Employee Records</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan Adipisicing eiusmod cupidatat elit deserunt dolor et et.</td>
+            <td>Kumar Excepteur culpa Lorem eu aute occaecat voluptate adipisicing consequat occaecat aliqua consectetur mollit.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Sohan</td>
+            <td>Kumar</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>Kumar</td>
+            <td>$700</td>
+        </tr>
+    </table>
+</body>
+</html>
