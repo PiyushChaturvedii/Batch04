@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+            h1{
+                padding: 0 0 0 40px;
+            }
+        
+            #wrapper{
+                background: #eee;
+                list-style: none;
+                margin: 30px;
+                padding: 20px;
+
+            }
+
+            #wrapper li{
+                display: flex;
+                pad: 5px 0;
+                justify-content: flex-end;
+            }
+            #wrapper li label{
+                flex: 1;
+            }
+            #wrapper li input{
+                flex: 3;
+            }
+            
+            @media screen and (min-width:1200px){
+                #wrapper li input{
+                    flex: 8;
+                }
+            }
+            @media screen and (min-width:992px){
+                #wrapper li input{
+                    flex: 6;
+                }
+            }
+            @media screen and (min-width:768px){
+                #wrapper li input{
+                    flex: 4;
+                }
+            }
+            @media screen and (min-width:500px){
+                #wrapper li input{
+                    flex: 3;
+                }
+            }
+            @media screen and (min-width:300px) and (max-width:499px){
+               
+                #wrapper li {
+                    flex-direction: column;
+                }
+                #wrapper li input{
+                    flex: 3;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Align Form with Flexbox</h1>
+
+    <form action="">
+        <ul id="wrapper">
+            <li>
+                <label for="">Name</label>              
+                <input type="text">
+            </li>
+            <li>
+                <label for="">Email Address</label>
+                <input type="email">
+            </li>
+            <li>
+                <label for="">Class Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <button type="submit">Save</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Flexbox</title>
+    <style>
+        .container{
+            border: 4px solid red;
+            margin: 50px;
+            padding: 0px;
+            
+            width: 400px;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .items{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px;
+            height: 100px;
+        }
+
+        .item1{background: orangered;}
+        .item2{background: sandybrown}
+        .item3{background: seagreen;
+        display: flex;
+        }
+        .item3 > .subitem{
+background: silver;
+color: blue;
+flex-grow: 1;
+margin: 5px;
+        }
+        .item4{background: slateblue;}
+    </style>
+</head>
+<body>
+    <h1>Flexbox: Nested Flexbox</h1>
+
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">
+            <div class="subitem subitem1">a</div>
+            <div class="subitem subitem2">b</div>
+            <div class="subitem subitem3">c</div>
+        </div>
+        <div class="items item4">Four</div>
+    </div>
+</body>
+</html>
