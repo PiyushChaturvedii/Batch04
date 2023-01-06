@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Operators</title>
+    <style>
+        body{
+            font-size: 32px;
+        }
+        button{
+            background-color: red;
+            width:auto;
+            height:auto;
+            border:1px solid black;
+        }
+        button a{
+            color: #fff;
+            text-decoration: none;
+           font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">JS: if else if</h1>
+
+
+    <script>
+       let per = 30;
+    
+        if(per >= 80 && per <= 100){
+            document.write("Merit.");
+
+        }else if(per >= 60 && per < 80){
+            document.write("I Division.");
+
+        }else if(per >= 40 && per < 60){
+            document.write("II Division.");
+
+        }else if(per >= 33 && per < 40){
+            document.write("III Division.");
+
+        }else if(per >= 30 && per < 33){
+            document.write(" Supplementary");
+
+        }else if (per < 30){
+            document.write("Fail");
+        }
+        else{
+            document.write("sorry.");
+        }
+//     let per = 20;
+
+// if(per >= 80 && per <= 100){
+//     document.write("You are in Merit.");
+// }else if(per >= 60 && per < 80){
+//     document.write("You are in I Division.");
+// }else if(per >= 45 && per < 60){
+//     document.write("You are in II Division.");
+// }else if(per >= 33 && per < 45){
+//     document.write("You are in III Division.");
+// }else if(per < 33){
+//     document.write("You are Fail.");
+// }else{
+//    document.write("Please Enter Valid Number."); 
+// }
+
+    </script>
+    <br>
+    <button type="button" class="btn btn-primery"><a href="index.html">click home page</a></button>
+</body>
+</html>
