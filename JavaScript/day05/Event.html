@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script>
+        function hello(){
+            alert("Waring!!! you are in yellow line.");
+        }
+        function hello1(){
+            alert("Waring!!! you are leave paragraph area.");
+        }
+        function key() {
+            alert("Don't use keyboard in this website again.")
+        }
+        function resize(){
+            alert("Don't change the size of website.")
+        }
+        
+    </script>
+    <style>
+        h1{
+            background: gold;
+        }
+        p{
+            background: chartreuse;
+        }
+    </style>
+</head>
+<body onkeypress="key()" onresize="resize()">
+    <h1>Click here</h1>
+    <button ondblclick="hello()">ClickMe</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores necessitatibus nemo labore, harum impedit perferendis animi officia inventore? Delectus quas quibusdam animi nam aliquid debitis reiciendis ipsam provident! Quas nemo aliquid rem consectetur? Architecto dolores blanditiis molestias ea corporis nulla id commodi unde doloribus optio animi, perferendis vel? Pariatur.</p>
+</body>
+</html>
