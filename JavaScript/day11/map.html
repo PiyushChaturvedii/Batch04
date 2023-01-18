@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Map</title>
+</head>
+<body>
+    <script>
+        // var ary = [4,2,3,3,3,3];
+
+        // var b = 2;
+        // var c = ary.map(test);
+
+        // document.write(c);
+
+
+        // function test(x) {
+        //     return x * 10;
+        // }
+        var ary = [
+            {fname: 'Ram', lname: 'Sharma'},
+            {fname: 'Rahul', lname: 'Kumar'},
+            {fname: 'Karan', lname: 'Gupta'}
+        ];
+
+        var b = ary.map(test);
+        document.write(b);
+
+        function test(x) {
+        return x.fname+ " "+x.lname;
+        }
+    </script>
+</body>
+</html>

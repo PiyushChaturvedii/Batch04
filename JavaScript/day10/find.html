@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Find </title>
+</head>
+<body>
+    <script>
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        
+        
+        var ages = [19,17,25,19];
+        document.write(ages+"<br>");
+
+        var b = ages.find(checkAdult);
+        document.write("B= "+b+"<br>");
+
+        var c = ages.findIndex(checkAdult);
+        document.write("C= "+c)
+
+
+        
+    </script>
+</body>
+</html>
