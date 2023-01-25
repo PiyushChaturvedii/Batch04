@@ -66,3 +66,6 @@ document.getElementById('header').addEventListener('click', function () {
 function abc() {
     document.getElementById('header').style.background = 'green';
 }
+document.getElementById('footer').addEventListener('click',function (){
+  
+})
