@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript:Location Object</h1>
+    <button onclick="newFunction()">Click</button></br>
+
+    <script>
+        function newFunction() {
+            // location.href = "https://www.google.com/"
+            // location.reload;
+            // location.assign("https://www.google.com/");
+            location.replace("https://www.google.com/");
+        }
+        document.write(location.href);
+        document.write("<br>");
+        document.write(location.host);
+        document.write("<br>");
+        document.write(location.hostname)
+        document.write("<br>");
+        document.write(location.port)
+        document.write("<br>");
+        document.write(location.protocol)
+        document.write("<br>");
+    </script>
+</body>
+</html>

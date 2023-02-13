@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM: Open & Close</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="resizeWindow()">Resize Window</button>
+    
+    <script>
+        var myWindow;
+
+        function openWindow() {
+            myWindow = window.open('','',"width=200px,height=200px,left=50px,top=50px")
+            myWindow.document.write('<p>This is myWindow.</p>');
+        }
+
+        function resizeWindow() {
+            // myWindow.resizeTo(500,500);
+            myWindow.resizeBy(500,500);
+        }
+
+    </script>
+</body>
+</html>
