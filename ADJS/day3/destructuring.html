@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // let user = ["Ram Sharma",22,"Jaipur",["Male",25000]]
+        // let [name, age=20, city,[gender, salary]] = user;
+        // let [name,age,city, ...args] = user;
+
+        // console.log(name);
+        // console.log(args);
+        // console.log(city);
+        // console.log(gender);
+        // console.log(salary);
+
+        // function user([name, age = 20, city]) {         
+        //     console.log(name);
+        //     console.log(age);
+        //     console.log(city);
+        // }
+
+        // user(["Ram Sharma", 22, "Jaipur"]);
+        // function user() {
+        //     return["Ram Sharma",22,"Jaipur"];
+        // }
+        // let [name,age,city] = user();
+
+        // console.log(city);
+
+        // Object Destructing
+
+        let user = {
+            name: "Ram Sharma",
+            age: 22,
+            city: "Jaipur"
+        }
+
+        // let {name,city} = user;
+        let {name: n, age: a, city: c} = user;
+        
+        console.log(n);
+        console.log(a);
+        console.log(c);
+    </script>
+</body>
+</html>
