@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJS: Methods</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(name,age){
+               this.studentname = name;
+                this.studentage = age;
+                console.log("constructor Function");
+            }
+            hello(){
+                document.write(`Hello ${this.studentname}. Your age is ${this.studentage}`);
+            }
+            static staticMethod(){
+                console.log("Static Function Run");
+            }
+
+        }
+
+        // let a = new student();
+        // let b = new student();
+        // a.name = "Ram Sharma";
+        // a.hello()
+        let a = new student("Ram Sharma",25);
+        let b = new student("Mohan Gupta",30);
+        a.hello();
+        b.hello();
+        // a.staticMethod();
+        student.staticMethod();
+    </script>
+</body>
+</html>
