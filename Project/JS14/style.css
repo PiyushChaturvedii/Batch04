@@ -1,0 +1,25 @@
+body{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg,white,#32324e);
+}
+
+.container{
+    /* width: 1280px; */
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#timer h1{
+    user-select: none;
+    color: #fff;
+    font-size: 12vw;
+}
