@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs')%>
+<link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <%- include('includes/navigation.ejs')%>
+    
+    <main>
+        <% if (prods.length >0) { %>
+            <div class="grid">
+                <% for (let product of prods) {  %>
+                <article class="card product-item">
+                    <header class="card_header">
+                        <h1 class="product_title"> <%= product.title %></h1>
+                    </header>
+                    <div class="card_image">
+                        <img src="https://www.bigbasket.com/media/uploads/p/l/30003344_12-fresho-alphonso-mango.jpg" alt="image"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="product_price">$ 20.00</h2>
+                        <p class="product_description">A very interesting book</p>
+                    </div>
+                    <div class="card_actions">
+                        <butt  on class="btn">Add to Cart</button>
+                    </div>
+                </article>
+                <%}%>
+            </div>
+            <%} else { %>
+                <h1>No Products Found!</h1>
+        <% } %>
+    </main>
+
+        <%- include('includes/end.ejs')%>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+   
+    <main>
+        {{#if hasProducts}}
+            <div class="grid">
+                {{#each prods}}
+                <article class="card product-item">
+                    <header class="card_header">
+                        <h1 class="product_title"> {{this.title}}</h1>
+                    </header>
+                    <div class="card_image">
+                        <img src="https://www.bigbasket.com/media/uploads/p/l/30003344_12-fresho-alphonso-mango.jpg" alt="image"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="product_price">$ 20.00</h2>
+                        <p class="product_description">A very interesting book</p>
+                    </div>
+                    <div class="card_actions">
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </article>
+                {{/each}}
+            </div>
+        {{else}} 
+            <h1>No Products Found !</h1>
+        {{/if}}
+        
+    </main>
+</body>
+</html>
